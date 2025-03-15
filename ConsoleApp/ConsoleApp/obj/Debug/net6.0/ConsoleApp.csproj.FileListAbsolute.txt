@@ -1,0 +1,15 @@
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\bin\Debug\net6.0\ConsoleApp.exe
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\bin\Debug\net6.0\ConsoleApp.deps.json
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\bin\Debug\net6.0\ConsoleApp.runtimeconfig.json
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\bin\Debug\net6.0\ConsoleApp.dll
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\bin\Debug\net6.0\ref\ConsoleApp.dll
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\bin\Debug\net6.0\ConsoleApp.pdb
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.csproj.AssemblyReference.cache
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.AssemblyInfoInputs.cache
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.AssemblyInfo.cs
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.csproj.CoreCompileInputs.cache
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.dll
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ref\ConsoleApp.dll
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.pdb
+F:\Letsgo\Web\demorepo\ConsoleApp\ConsoleApp\obj\Debug\net6.0\ConsoleApp.genruntimeconfig.cache
