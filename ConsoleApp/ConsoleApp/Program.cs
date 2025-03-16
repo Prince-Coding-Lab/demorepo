@@ -1,49 +1,68 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
 
-//Program 1 for age calculation
-//Console.WriteLine("Please enter your age:");
-//int age = Convert.ToInt32(Console.ReadLine());
+namespace ConsoleApp
+{
+  internal class Program
+  {
+    static void Main(string[] args)
+    {
 
+			//PrintHelloWorld();
 
+			//PrintFullName();
 
-//if (age > 35)
-//	Console.WriteLine("You are very old");
-//else if (age<10)
-//	Console.WriteLine("You are a child");
-//else 
-//	Console.WriteLine("You are very young");
+			SumOfTwoNumber();
 
+			//detail of variable
 
-//Program to print full name 
+			//string firstName = "";
+			//firstName = "Cherry";
 
-//Console.WriteLine("Please enter your firstName");
-//string firstName = Console.ReadLine();
+			//int age = 0;
+			//age = 5;
 
-//Console.WriteLine("Plese enter your lastName");
-//string lastName = Console.ReadLine();
+			//double price = 0;
+			//price = 10.5;
+		}
 
-//Console.WriteLine("Please enter your email address");
-//string email = Console.ReadLine();
+		public static void PrintHelloWorld()
+		{
+			Console.WriteLine("Hello World!");
+		}
 
-//Console.WriteLine("Your full name is: " + firstName + " " + lastName);
-//Console.WriteLine("Your email address is: " + email);
+		public static void PrintFullName()
+		{
+			string firstName = "";
+			string lastName = "";
+			string fullName = "";
 
+			Console.WriteLine("Please Enter your FirstName");
+			firstName = Console.ReadLine();
 
-//Create a program to sum of two number
+			Console.WriteLine("Please Enter your LastName");
+			lastName = Console.ReadLine();
 
-Console.WriteLine("Please enter first number");
-int number1 = Convert.ToInt32(Console.ReadLine());
+			fullName = firstName + " " +lastName;
+			Console.WriteLine("Your full name is: " + fullName);
 
-Console.WriteLine("Please enter second number");
-int number2 = Convert.ToInt32(Console.ReadLine());
+		}
 
-int sum = number1 + number2;
+		public static void SumOfTwoNumber() {
+			int number1 = 0;
+			int number2 = 0;
+			int sum = 0;
 
-Console.WriteLine("Sum is: " + sum);
+			Console.WriteLine("Please Enter First Number");
+			number1 = Convert.ToInt32(Console.ReadLine());
 
-//string firstName = "";
+			Console.WriteLine("Please Enter Second Number");
+			number2 = Convert.ToInt32(Console.ReadLine());
 
+			sum = number1 + number2;
 
-//firstName = "Prince";
-//int pageNumber = 50;
-//double pertage = 50.5;
+			Console.WriteLine("Sum is: " + sum);
+
+		}
+  }
+}
