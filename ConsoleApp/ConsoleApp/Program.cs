@@ -12,7 +12,9 @@ namespace ConsoleApp
 
 			//PrintFullName();
 
-			SumOfTwoNumber();
+			//SumOfTwoNumber();
+			//CalculateAgeLabel();
+			IdentifyEvenOddNumber();
 
 			//detail of variable
 
@@ -63,6 +65,43 @@ namespace ConsoleApp
 
 			Console.WriteLine("Sum is: " + sum);
 
+		}
+
+		public static void CalculateAgeLabel()
+		{ 
+			int age = 0;
+
+			Console.WriteLine("Please Enter the Age");
+			age = Convert.ToInt32(Console.ReadLine());
+
+			if (age < 15)
+			{
+				Console.WriteLine("You are a child");
+			}
+			else if (age > 15 && age < 35)
+			{
+				Console.WriteLine("you are very young");
+			}
+			else {
+				Console.WriteLine("You are very old");
+			}
+		
+		}
+
+		public static void IdentifyEvenOddNumber()
+		{
+			int number = 0;
+			Console.WriteLine("Please enter the number");
+			number = Convert.ToInt32(Console.ReadLine());
+
+			if (number % 2 == 0)
+			{
+				Console.WriteLine("This is a even number");
+			}
+			else {
+				Console.WriteLine("This is a odd number");
+			}
+		
 		}
   }
 }
