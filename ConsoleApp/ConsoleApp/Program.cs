@@ -14,7 +14,10 @@ namespace ConsoleApp
 
 			//SumOfTwoNumber();
 			//CalculateAgeLabel();
-			IdentifyEvenOddNumber();
+			//IdentifyEvenOddNumber();
+
+			//WorkingWithForLoop();
+			FindPrimeNumber();
 
 			//detail of variable
 
@@ -102,6 +105,46 @@ namespace ConsoleApp
 				Console.WriteLine("This is a odd number");
 			}
 		
+		}
+
+		public static void WorkingWithForLoop()
+		{
+
+			for (int i = 1; i <= 5; i++)
+			{
+				Console.WriteLine(i);
+
+			}
+		
+		}
+
+		public static void FindPrimeNumber()
+		{
+			int number = 0;
+			bool NotPrime = false;
+			Console.WriteLine("Please enter the number");
+			number = Convert.ToInt32(Console.ReadLine());
+			for (int i = 2; i <= number; i++)
+			{
+				if (number % 1 == 0 && number % number == 0 && number % i != 0)
+				{
+
+				}
+				else
+				{
+					Console.WriteLine("It is not a prime number");
+					NotPrime = true;
+					break;
+				}
+				
+
+			}
+			if (!NotPrime)
+			{
+				Console.WriteLine("This is a prime number");
+			}
+
+
 		}
   }
 }
