@@ -7,7 +7,6 @@ namespace ConsoleApp
   {
     static void Main(string[] args)
     {
-
 			//PrintHelloWorld();
 
 			//PrintFullName();
@@ -147,4 +146,40 @@ namespace ConsoleApp
 
 		}
   }
+
+	public class Student {
+
+		//fields
+		private int id;
+		public string name;
+
+		//method
+		public void GetStudentNameV1()
+		{
+			Console.WriteLine("My Name is Prince");
+		}
+
+		public string GetStudentNameV2()
+		{
+			return "My Name is Prince";
+		}
+
+
+		public void GetStudentNameV3(string firstName)
+		{
+			
+		}
+
+
+		public string PrintYourFullName(string firstName, string lastName)
+		{
+
+			string fullName = string.Empty;
+
+			fullName = firstName +" "+ lastName;
+
+			return fullName;
+		}
+
+	}
 }
