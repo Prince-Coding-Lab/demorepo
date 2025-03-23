@@ -7,6 +7,45 @@ namespace ConsoleApp
   {
     static void Main(string[] args)
     {
+
+
+			Employee.GetEmployeeName();
+
+			Student objStudent = new Student();
+			//	objStudent.GetStudentNameV1();
+
+			//string NameValue = "";
+
+			//NameValue = objStudent.GetStudentNameV2();
+
+			//Console.WriteLine(NameValue);
+
+
+			//string NameValue1 = "My Name is Prince";
+			//objStudent.GetStudentNameV3(NameValue1);
+
+			//string firstName = "Prince";
+			//string lastName = "Sharma";
+
+			//string fullName = "";
+
+			//fullName = objStudent.PrintYourFullName(firstName, lastName);
+
+			//Console.WriteLine(fullName);
+
+			//int number1 = 0;
+			//int number2 = 0;
+			//Console.WriteLine("Please Enter First Number");
+			//number1 = Convert.ToInt32(Console.ReadLine());
+
+			//Console.WriteLine("Please Enter Second Number");
+			//number2 = Convert.ToInt32(Console.ReadLine());
+			//SumOfTwoNumberV2(number1, number2);
+
+			SumOfTwoNumber();
+
+
+
 			//PrintHelloWorld();
 
 			//PrintFullName();
@@ -16,7 +55,7 @@ namespace ConsoleApp
 			//IdentifyEvenOddNumber();
 
 			//WorkingWithForLoop();
-			FindPrimeNumber();
+			//FindPrimeNumber();
 
 			//detail of variable
 
@@ -63,6 +102,16 @@ namespace ConsoleApp
 			Console.WriteLine("Please Enter Second Number");
 			number2 = Convert.ToInt32(Console.ReadLine());
 
+			sum = number1 + number2;
+
+			Console.WriteLine("Sum is: " + sum);
+
+		}
+
+
+		public static void SumOfTwoNumberV2(int number1, int number2)
+		{
+			int sum = 0;
 			sum = number1 + number2;
 
 			Console.WriteLine("Sum is: " + sum);
@@ -165,9 +214,9 @@ namespace ConsoleApp
 		}
 
 
-		public void GetStudentNameV3(string firstName)
+		public void GetStudentNameV3(string nameValue)
 		{
-			
+			Console.WriteLine(nameValue);
 		}
 
 

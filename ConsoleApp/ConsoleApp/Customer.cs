@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-	public static class Employee
+	internal class Customer
 	{
-		public static void GetEmployeeName()
-		{ 
-		
-		}
 	}
 }
