@@ -7,7 +7,16 @@ namespace ConsoleApp
   {
     static void Main(string[] args)
     {
+			string message = string.Empty;
 
+			Message objMessage = new Message();
+			message = objMessage.SendMessage1();
+
+			Whatsaap objWhatsapp = new Whatsaap();
+			message= objWhatsapp.SendMessage1();
+
+			Bike objBike = new Bike();
+	
 
 			Employee.GetEmployeeName();
 
