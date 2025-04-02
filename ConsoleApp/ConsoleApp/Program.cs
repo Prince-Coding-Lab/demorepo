@@ -7,20 +7,26 @@ namespace ConsoleApp
   {
     static void Main(string[] args)
     {
-			string message = string.Empty;
 
-			Message objMessage = new Message();
-			message = objMessage.SendMessage1();
+			StaffDomain staffDomain = new StaffDomain();
 
-			Whatsaap objWhatsapp = new Whatsaap();
-			message= objWhatsapp.SendMessage1();
+			staffDomain.GetStaffData();
 
-			Bike objBike = new Bike();
-	
+			staffDomain.GetCustomerData();
+			//string message = string.Empty;
 
-			Employee.GetEmployeeName();
+			//Message objMessage = new Message();
+			//message = objMessage.SendMessage1();
 
-			Student objStudent = new Student();
+			//Whatsaap objWhatsapp = new Whatsaap();
+			//message= objWhatsapp.SendMessage1();
+
+			//Bike objBike = new Bike();
+
+
+			//Employee.GetEmployeeName();
+
+			//Student objStudent = new Student();
 			//	objStudent.GetStudentNameV1();
 
 			//string NameValue = "";
