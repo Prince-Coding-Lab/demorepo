@@ -10,9 +10,10 @@ namespace ConsoleApp
 
 			StaffDomain staffDomain = new StaffDomain();
 
-			staffDomain.GetStaffData();
+			//staffDomain.GetStaffData();
 
-			staffDomain.GetCustomerData();
+			//staffDomain.GetCustomerData();
+			staffDomain.GetStaffDataSet();
 			//string message = string.Empty;
 
 			//Message objMessage = new Message();
