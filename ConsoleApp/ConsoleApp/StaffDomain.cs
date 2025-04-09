@@ -10,9 +10,11 @@ namespace ConsoleApp
 {
 	public class StaffDomain
 	{
+
+		private static string conn = "Server=DESKTOP-4DHV51D;Database=BikeStores;Integrated Security=True;";
 		public void GetCustomerData()
-		{ 
-		
+		{
+
 		}
 		public void GetStaffData()
 		{
@@ -45,7 +47,7 @@ namespace ConsoleApp
 		{
 			string querystring = "select * from sales.staffs";
 
-			string connectionString = "Server=DESKTOP-NDTMO2E;Database=BikeStores;Integrated Security=True;";
+			string connectionString = "Server=DESKTOP-4DHV51D;Database=BikeStores;Integrated Security=True;";
 
 
 			using (SqlConnection connection = new SqlConnection(connectionString))
@@ -67,16 +69,63 @@ namespace ConsoleApp
 					Console.WriteLine(row["staff_id"] + ",  " + row["first_name"] + ",  " + row["last_name"]);
 
 				}
-					// Call Read before accessing data.
-					//while (reader.Read())
-					//{
-					//	Console.WriteLine(String.Format("{0}, {1},{2}",
-					//			reader[0], reader[1], reader[2]));
-					//}
+				// Call Read before accessing data.
+				//while (reader.Read())
+				//{
+				//	Console.WriteLine(String.Format("{0}, {1},{2}",
+				//			reader[0], reader[1], reader[2]));
+				//}
 
-					//// Call Close when done reading.
-					//reader.Close();
-				}
+				//// Call Close when done reading.
+				//reader.Close();
+			}
 		}
+
+		public void AddBrand(string brandValue)
+		{
+			int returnCode = 0;
+			try
+			{
+				string spAddBrand = string.Empty;
+				spAddBrand = "spi_brands";
+				SqlConnection connection = new SqlConnection(conn);
+				SqlCommand cmd = new SqlCommand(spAddBrand, connection);
+				cmd.Parameters.AddWithValue("@BrandName", brandValue);
+
+				SqlParameter returnParam = cmd.Parameters.Add("@return", SqlDbType.Int);
+				returnParam.Direction = ParameterDirection.ReturnValue;
+				cmd.CommandType = CommandType.StoredProcedure;
+				connection.Open();
+				int result = cmd.ExecuteNonQuery();
+				returnCode = (int)returnParam.Value;
+				if (returnCode == 105)
+				{
+					Console.WriteLine("Brand is already exists");
+				}
+				else if (returnCode == 100)
+				{
+					Console.WriteLine("Brand added successfully.");
+
+				}
+				else
+				{
+					Console.WriteLine("Nothing happened.");
+				}
+			}
+			catch (Exception ex)
+			{
+
+				throw;
+			}
+
+
+
+		}
+
+		public void AddCustomer(string fName, string lName, string phone, string email, string street, string city, string state, string zipcode)
+		{ 
+		
+		}
+
 	}
 }

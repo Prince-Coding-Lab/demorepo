@@ -9,11 +9,14 @@ namespace ConsoleApp
     {
 
 			StaffDomain staffDomain = new StaffDomain();
+			Console.WriteLine("Please Enter the Brand Name");
+		  string brand = Console.ReadLine();
 
+			staffDomain.AddBrand(brand);
 			//staffDomain.GetStaffData();
 
 			//staffDomain.GetCustomerData();
-			staffDomain.GetStaffDataSet();
+			//staffDomain.GetStaffDataSet();
 			//string message = string.Empty;
 
 			//Message objMessage = new Message();
@@ -58,7 +61,7 @@ namespace ConsoleApp
 			//number2 = Convert.ToInt32(Console.ReadLine());
 			//SumOfTwoNumberV2(number1, number2);
 
-			SumOfTwoNumber();
+			//SumOfTwoNumber();
 
 
 
